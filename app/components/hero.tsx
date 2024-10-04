@@ -29,14 +29,14 @@ function SocialLink({
 
 const Hero = () => {
   return (
-    <div className="mt-20">
-      <div className="text-lg w-full max-w-5xl">
-        <Avatar className="w-20 h-20">
+    <div className="mt-0 lg:mt-20">
+      <div className="text-lg w-full max-w-[95%]">
+        <Avatar className="w-36 h-36">
           <AvatarImage src="/dhanushka.png" alt="dhanushka" />
           <AvatarFallback>DC</AvatarFallback>
         </Avatar>
 
-        <h1 className="text-4xl mt-10 font-bold tracking-normal leading-tight text-zinc-600 dark:text-zinc-100 sm:text-6xl">
+        <h1 className="text-3xl lg:text-4xl mt-10 font-bold tracking-normal leading-tight text-zinc-600 dark:text-zinc-100">
           Software Engineer, Tech Speaker and YouTuber
         </h1>
         <p className="mt-8 text-lg text-zinc-500 dark:text-zinc-100">
@@ -90,7 +90,6 @@ const Hero = () => {
           />
         </div>
       </div>
-      <div></div>
     </div>
   );
 };

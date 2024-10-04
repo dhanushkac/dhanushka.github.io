@@ -70,7 +70,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-24">
+    <main className="flex min-h-screen flex-col items-center px-10 pt-10">
       <Hero />
     </main>
   );
