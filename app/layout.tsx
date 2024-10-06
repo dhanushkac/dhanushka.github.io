@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -73,7 +73,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         {process.env.NODE_ENV === "production" && (
-          <GoogleAnalytics gaId="GTM-M2M2Z6TN" />
+          <GoogleTagManager gtmId="GTM-M2M2Z6TN" />
         )}
         {children}
       </body>
